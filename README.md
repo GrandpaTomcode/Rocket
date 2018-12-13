@@ -1,5 +1,5 @@
 
-<img src="rocketLogo.svg" width="200">
+<img src="rocketLogo.svg" width="250">
 
-# Rocket - A backend system using firebase.
+# Rocket - A backend system for blogs using firebase.
 
