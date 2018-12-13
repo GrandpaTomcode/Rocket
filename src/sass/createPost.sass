@@ -1,10 +1,15 @@
+@import 'mixin'
+
 .createPost 
     display: flex
     flex-direction: column
-    justify-content: center
-    align-content: center
-    input, textarea, button
-        width: 50%
+    margin: 0 auto
     textarea
         height: 200px
+
+
+@include mobile
+    .createPost
+        input, textarea, button
+            width: 90%
         

@@ -1,6 +1,7 @@
 import React from 'react'
 import { fire } from './config'
 import { Link } from 'react-router-dom'
+import Navigation from './Navigation'
 
 export class Backend extends React.Component {
     constructor() {
@@ -26,9 +27,13 @@ export class Backend extends React.Component {
     render() {
         return (
             <div>
-                <Link to="/create">
-                    <h1>Create Post</h1>
-                </Link>
+                <div className="backendNavigation">
+                    <Navigation />
+                    <Link to="/create">
+                        <h2>Create Post</h2>
+                    </Link>
+                </div>
+
                 <h1>Title: {this.state.title} </h1>
             </div>
         )
