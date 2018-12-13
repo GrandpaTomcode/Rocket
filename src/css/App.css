@@ -1,4 +1,67 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF5252; }
+
+.headerTitle {
+  color: #fff; }
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .posts h1 {
+    text-align: center; }
+  .posts p {
+    letter-spacing: 1px;
+    line-height: 23px; }
+
+@media (min-width: 200px) and (max-width: 799px) {
+  .posts p {
+    width: 90%; } }
+
+.createPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .createPost input, .createPost textarea, .createPost button {
+    width: 50%; }
+  .createPost textarea {
+    height: 200px; }
+
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .navigation h2 {
     margin: 5px; }
@@ -8,3 +71,7 @@ h1, h2, h3, h4 {
 
 p, span {
   font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }

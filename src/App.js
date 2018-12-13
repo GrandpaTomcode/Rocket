@@ -3,18 +3,18 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './css/App.css'
 import Home from './components/home'
 import Backend from './components/backend'
+import Create from './components/createPost'
 import Error from './components/error'
-import Navigation from './components/Navigation'
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
                 <div>
-                    <Navigation />
                     <Switch>
                         <Route path="/" component={Home} exact />
                         <Route path="/backend" component={Backend} />
+                        <Route path="/create" component={Create} />
                         <Route component={Error} />
                     </Switch>
                 </div>

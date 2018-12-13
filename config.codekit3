@@ -158,6 +158,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/src\/components\/createPost.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/src\/components\/createPost-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/src\/components\/error.js": {
 		"ft": 64,
 		"ma": 0,
@@ -229,7 +239,7 @@
 		"prP": 0
 		},
 	"\/src\/sass\/backend.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -241,8 +251,21 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/sass\/createPost.sass": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/createPost.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/sass\/home.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -254,8 +277,21 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/sass\/mixin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/sass\/mixin.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/sass\/navigation.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -268,7 +304,7 @@
 		"uL": 1
 		},
 	"\/src\/sass\/style.sass": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -2217,7 +2253,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},

@@ -1,13 +1,12 @@
 import React from 'react'
 import { fire } from './config'
+import { Link } from 'react-router-dom'
 
 export class Backend extends React.Component {
     constructor() {
         super()
         this.state = {
-            id: '',
-            title: 'First State',
-            body: 'First State'
+            title: 'First State'
         }
     }
 
@@ -21,17 +20,16 @@ export class Backend extends React.Component {
                     title: childNodes.val().title,
                     body: childNodes.val().body
                 })
-                console.log(childNodes.val().title)
-                console.log(childNodes.val().body)
             })
         })
     }
     render() {
         return (
             <div>
-                <p> Backend </p>
+                <Link to="/create">
+                    <h1>Create Post</h1>
+                </Link>
                 <h1>Title: {this.state.title} </h1>
-                <h1>Body: {this.state.body} </h1>
             </div>
         )
     }

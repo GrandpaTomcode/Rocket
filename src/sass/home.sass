@@ -1,0 +1,28 @@
+@import 'mixin'
+
+.header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: #FF5252
+
+.headerTitle
+    color: #fff
+
+.posts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    h1
+        text-align: center
+    p 
+        letter-spacing: 1px
+        line-height: 23px
+
+@include mobile
+    .posts
+        p
+            width: 90%
+    
