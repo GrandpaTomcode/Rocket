@@ -9,14 +9,13 @@ export class Backend extends React.Component {
             title: 'First State',
             body: 'First State'
         }
-
     }
 
     componentDidMount() {
         const rootRef = fire.database().ref()
         const post = rootRef.child('posts').orderByKey()
         post.once('value', snap => {
-            snap.forEach((childNodes) => {
+            snap.forEach(childNodes => {
                 this.setState({
                     id: childNodes.key,
                     title: childNodes.val().title,

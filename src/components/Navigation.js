@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
-        <div>
-            <Link to="/">Home</Link>
-            <Link to="/backend">Backend</Link>
+        <div className="navigation">
+            <Link to="/">
+                <h2>Home</h2>
+            </Link>
+            <Link to="/backend">
+                <h2>Backend</h2>
+            </Link>
         </div>
     )
 }
