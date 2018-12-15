@@ -12,7 +12,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FF5252; }
+  background: #FF5252;
+  height: 80px; }
 
 .headerTitle {
   color: #fff; }
