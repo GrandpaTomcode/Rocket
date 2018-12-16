@@ -2,21 +2,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #FF5252;
-  height: 80px; }
+  height: 80px;
+  color: #fff; }
 
 .headerTitle {
-  color: #fff; }
+  font-weight: 900;
+  margin-left: 15px; }
 
 .posts {
   display: -webkit-box;
@@ -31,13 +33,17 @@
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: 0 auto;
+  width: 60%; }
   .posts h1 {
     text-align: center; }
   .posts p {
     letter-spacing: 1px;
-    line-height: 23px;
-    width: 50%; }
+    line-height: 23px; }
+
+.postDate {
+  text-align: center; }
 
 @media (min-width: 200px) and (max-width: 799px) {
   .posts p {
@@ -47,8 +53,57 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .backendNavigation h2 {
-    margin: 5px; }
+  .backendNavigation h3 {
+    margin-right: 10px; }
+
+.listOfPostsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px; }
+  .listOfPostsHeader h1 {
+    font-weight: 900;
+    padding-left: 5px;
+    color: #4E4E4E; }
+
+.listOfPosts, .listOfPostsHeader {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px; }
+
+.backendPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4E4E4E; }
+  .backendPosts h1 {
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 10px; }
+  .backendPosts button {
+    outline: none;
+    border: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 40px;
+    fill: #4E4E4E; }
+    .backendPosts button:hover {
+      cursor: pointer;
+      fill: #DD0A13; }
+
+.postDate {
+  margin: 5px; }
 
 .createPost {
   display: -webkit-box;
@@ -58,9 +113,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 50%; }
+  .createPost input, .createPost textarea {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 10px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em; }
+    .createPost input:focus, .createPost textarea:focus {
+      border-bottom: 5px solid #FF5252; }
+  .createPost input {
+    height: 50px;
+    border: 0px; }
   .createPost textarea {
-    height: 200px; }
+    height: 400px; }
+
+.subBtn {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #FF5252;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  width: 80px;
+  height: 40px;
+  margin: 10px; }
 
 @media (min-width: 200px) and (max-width: 799px) {
   .createPost input, .createPost textarea, .createPost button {
@@ -82,3 +166,9 @@ p, span {
 a {
   text-decoration: none;
   color: inherit; }
+
+ul {
+  padding: 0px; }
+
+li {
+  list-style-type: none; }

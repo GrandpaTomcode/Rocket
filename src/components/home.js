@@ -7,13 +7,7 @@ class Home extends React.Component {
     constructor() {
         super()
         this.state = {
-            posts:
-            {
-                id: '',
-                title: 'First State',
-                body: 'First State',
-                date: '13/12/2018'
-            }
+            posts: []
         }
     }
 
@@ -29,37 +23,48 @@ class Home extends React.Component {
             }
         })
         post.once('value', snap => {
-            snap.forEach(childNodes => {
-                this.setState({
-                    id: childNodes.key,
-                    title: childNodes.val().title,
-                    body: childNodes.val().body,
-                    date: childNodes.val().date
+            const posts = snap.val()
+            const newState = []
+            for (let post in posts)
+                newState.push({
+                    id: post,
+                    title: posts[post].title,
+                    date: posts[post].date,
+                    body: posts[post].body,
                 })
-                console.log(this.state.id)
-                console.log(this.state.title)
-                console.log(this.state.date)
-                console.log(this.state.body)
+            this.setState({
+                posts: newState.reverse()
             })
-
+            console.log(newState)
         })
+
     }
+
+
     render() {
-        const listOfPosts = Object.keys(this.state.posts).map(key =>
-            <div className="posts">
-                <h1 key={key.id}>{this.state.title}</h1>
-                <p key={key.id}>{this.state.date}</p>
-                <p key={key.id}>{this.state.body}</p>
-            </div>
-        )
-        console.log(listOfPosts)
+
+
         return (
             <div>
                 <div className="header">
                     <h1 className="headerTitle">Rocket</h1>
                 </div>
                 <Navigation />
-                <div>{listOfPosts}</div>
+                <section>
+                    <div>
+                        <ul>
+                            {this.state.posts.map(post => {
+                                return (
+                                    <li className='posts' key={post.id}>
+                                        <h1>{post.title}</h1>
+                                        <p className="postDate">{post.date}</p>
+                                        <p>{post.body}</p>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                </section>
             </div>
 
         );

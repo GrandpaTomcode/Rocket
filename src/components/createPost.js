@@ -40,12 +40,17 @@ class Create extends React.Component {
     render() {
         return (
             <div>
-                <Navigation />
+                <div className="header">
+                    <h1 className="headerTitle">Rocket Dashboard</h1>
+                    <Navigation />
+                </div>
+
                 <section>
                     <form onSubmit={this.handleSubmit} className="createPost">
                         <input
                             type="text"
                             name="title"
+                            autoComplete="off"
                             placeholder="Title"
                             onChange={this.handleChange}
                             value={this.state.title}
@@ -57,8 +62,7 @@ class Create extends React.Component {
                             onChange={this.handleChange}
                             value={this.state.body}
                         />
-
-                        <button>Submit Post</button>
+                        <button className="subBtn">Submit Post</button>
                     </form>
                 </section>
             </div>

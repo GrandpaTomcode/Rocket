@@ -2,27 +2,33 @@
 
 .header
     display: flex
-    flex-direction: column
-    justify-content: center
+    flex-direction: row
     align-items: center
+    justify-content: space-between
     background: #FF5252
     height: 80px
+    color: #fff
+
 
 .headerTitle
-    
-    color: #fff
+    font-weight: 900
+    margin-left: 15px
 
 .posts
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    margin: 0 auto
+    width: 60% 
     h1
         text-align: center
     p 
         letter-spacing: 1px
         line-height: 23px
-        width: 50%
+        
+.postDate
+    text-align: center        
 
 @include mobile
     .posts
