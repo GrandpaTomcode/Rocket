@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './Navigation'
+import { Link } from 'react-router-dom'
 import { fire } from './config'
 import '../css/App.css'
 
@@ -48,8 +48,13 @@ class Home extends React.Component {
             <div>
                 <div className="header">
                     <h1 className="headerTitle">Rocket</h1>
+                    <div className="navigation">
+                        <Link to="/signIn">
+                            <h3>Sign In</h3>
+                        </Link>
+                    </div>
                 </div>
-                <Navigation />
+
                 <section>
                     <div>
                         <ul>

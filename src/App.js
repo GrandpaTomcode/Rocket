@@ -5,6 +5,7 @@ import Home from './components/home'
 import Backend from './components/backend'
 import Create from './components/createPost'
 import Error from './components/error'
+import SignIn from './components/signIn';
 
 class App extends Component {
     render() {
@@ -13,8 +14,9 @@ class App extends Component {
                 <div>
                     <Switch>
                         <Route path="/" component={Home} exact />
-                        <Route path="/backend" component={Backend} />
+                        <PrivateRoute path="/backend" component={Backend} />
                         <Route path="/create" component={Create} />
+                        <Route path="/signIn" component={SignIn} />
                         <Route component={Error} />
                     </Switch>
                 </div>

@@ -150,12 +150,87 @@
   .createPost input, .createPost textarea, .createPost button {
     width: 90%; } }
 
-.navigation {
+.emailFormContainer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .navigation h2 {
-    margin: 5px; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #ffa9a9; }
+
+.emailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  background: #FF5252;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16), 0 16px 24px rgba(0, 0, 0, 0.31);
+          box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16), 0 16px 24px rgba(0, 0, 0, 0.31); }
+  .emailForm img {
+    width: 100px;
+    height: 100px; }
+  .emailForm h1 {
+    text-align: center;
+    color: #fff; }
+  .emailForm input {
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.8em; }
+  .emailForm .signInBtn {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    font-size: 0.8em;
+    color: white;
+    background: #FF5252;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.31);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.31);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .emailForm .signInBtn:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.31);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.31); }
+  .emailForm .googleSignInBtn {
+    background-image: url("../assets/googleSignIn.png");
+    background-size: contain;
+    width: 200px;
+    height: 50px; }
+  .emailForm .googleSignInBtn:hover, .emailForm .googleSignInBtn:active {
+    background-image: url("../assets/googleSignInHover.png");
+    cursor: pointer; }
+
+html, body {
+  height: 100vh; }
 
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif; }
@@ -172,3 +247,6 @@ ul {
 
 li {
   list-style-type: none; }
+
+.bold {
+  font-weight: 900; }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './Navigation'
+import { Link } from 'react-router-dom'
 import { fire } from './config'
 
 class Create extends React.Component {
@@ -42,7 +42,14 @@ class Create extends React.Component {
             <div>
                 <div className="header">
                     <h1 className="headerTitle">Rocket Dashboard</h1>
-                    <Navigation />
+                    <div className="backendNavigation">
+                        <Link to="/">
+                            <h3>View Blog</h3>
+                        </Link>
+                        <Link to="/backend">
+                            <h3>Backend</h3>
+                        </Link>
+                    </div>
                 </div>
 
                 <section>
